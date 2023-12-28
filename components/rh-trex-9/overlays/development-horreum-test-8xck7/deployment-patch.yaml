@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rh-trex-9
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/ysubrama-tenant/rh-trex-9/rh-trex-9@sha256:2ef0bc9b523ad3fa4deacc979a3a6243b95da4cfb065028e32cf7e1846192e13
+        name: trex
+        resources: {}
+status: {}
